@@ -43,12 +43,6 @@ TaskKey[Unit]("checkSpecFile") <<= (target, streams) map { (target, out) =>
     "Sets custom config to 'noreplace'"
   )
 
-  assert(
-    spec contains
-      "%config(noreplace) %attr(644,root,root) /etc/default/rpm-test",
-    "Sets /etc/default/rpm-test to 'noreplace'"
-  )
-
   out.log.success("Successfully tested rpm test file")
   ()
 }

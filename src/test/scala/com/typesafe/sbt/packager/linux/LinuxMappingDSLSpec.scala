@@ -4,6 +4,9 @@ import java.io.File
 
 import org.scalatest.{Matchers, WordSpec}
 
+/**
+  * Created by carsten on 13.10.16.
+  */
 class LinuxMappingDSLSpec extends WordSpec with Matchers with LinuxMappingDSL {
 
   "The LinuxMappingDSL" should {
